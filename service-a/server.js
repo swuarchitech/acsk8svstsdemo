@@ -10,7 +10,7 @@ app.use(morgan("dev"));
 
 // application -------------------------------------------------------------
 app.get('/', function (req, res) {
-    console.log('/ request');
+    console.log('/request');
     res.sendFile(__dirname + '/public/index.html');
 });
 
