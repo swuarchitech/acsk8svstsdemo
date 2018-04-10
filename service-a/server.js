@@ -25,7 +25,7 @@ app.get('/api', function (req, res) {
         var requestCount = reply;
     });
 
-    console.log('/api request, lol');
+    console.log('/api request, swu');
 
     // Invoke service-b
     request('http://service-b-k8sservice', function (error, response, body) {
