@@ -9,6 +9,9 @@ spec:
   containers:
   - name: service-a
     image: $ACR_DNS/service-a:$BUILD_ID
+    ports:
+    - containerPort: 80
+      protocol: TCP
   imagePullSecrets:
   - name: containersecret
 ---
@@ -32,6 +35,9 @@ spec:
       containers:
       - name: service-b
         image: $ACR_DNS/service-b:$BUILD_ID
+        ports:
+        - containerPort: 80
+          protocol: TCP
       imagePullSecrets:
       - name: containersecret
 ---
